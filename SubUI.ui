@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_worklist">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>-7</y>
+     <width>685</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(225, 225, 225);</string>
+   </property>
+   <property name="text">
+    <string>  Seegene WorkList</string>
+   </property>
+   <property name="margin">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="Line" name="line_1">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>59</y>
+     <width>685</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>97</x>
+     <y>-20</y>
+     <width>680</width>
+     <height>825</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="Tab_1">
+    <attribute name="title">
+     <string>Tab_1</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_smp_bcd">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>100</y>
+       <width>251</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_load">
+     <property name="geometry">
+      <rect>
+       <x>233</x>
+       <y>100</y>
+       <width>28</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_smp_ok">
+     <property name="geometry">
+      <rect>
+       <x>191</x>
+       <y>101</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(77, 154, 231);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_smp_count">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>100</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sample Count</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_smp_count">
+     <property name="geometry">
+      <rect>
+       <x>138</x>
+       <y>101</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_smp_bcd">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>100</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Barcode</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_next_1">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>750</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_smp_info_1">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>60</y>
+       <width>325</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+background-color: rgb(225, 225, 225);
+border-width: 0px;
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Sample Information</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_protocol_info_1">
+     <property name="geometry">
+      <rect>
+       <x>324</x>
+       <y>60</y>
+       <width>360</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+background-color: rgb(225, 225, 225);
+border-width: 0px;
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Protocol Information</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_bcd_1">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>140</y>
+       <width>120</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>WorkList Barcode</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_bcd_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>140</y>
+       <width>135</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Instrument Barcode</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_confirm">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>136</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confirm</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_cancel">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>136</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_bcd">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>170</y>
+       <width>530</width>
+       <height>560</height>
+      </rect>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="Tab_bcd_1">
+      <attribute name="title">
+       <string/>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_smp">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>-1</y>
+         <width>528</width>
+         <height>550</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;
+font: 15px;
+padding: 1px;
+header: 10px;</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <column>
+        <property name="text">
+         <string>WorkList Barcode</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Instrument Barcode</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Tab_bcd_2">
+      <attribute name="title">
+       <string/>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_smp_select">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>-1</y>
+         <width>528</width>
+         <height>550</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: black;
+font: 15px;
+padding: 1px;
+header: 10px;</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+       </property>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Barcode</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </column>
+      </widget>
+     </widget>
+    </widget>
+    <zorder>pushButton_cancel</zorder>
+    <zorder>lineEdit_smp_bcd</zorder>
+    <zorder>toolButton_load</zorder>
+    <zorder>pushButton_smp_ok</zorder>
+    <zorder>label_smp_count</zorder>
+    <zorder>lineEdit_smp_count</zorder>
+    <zorder>label_smp_bcd</zorder>
+    <zorder>pushButton_next_1</zorder>
+    <zorder>pushButton_smp_info_1</zorder>
+    <zorder>pushButton_protocol_info_1</zorder>
+    <zorder>radioButton_bcd_1</zorder>
+    <zorder>radioButton_bcd_2</zorder>
+    <zorder>pushButton_confirm</zorder>
+    <zorder>tabWidget_bcd</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab_2</string>
+    </attribute>
+    <widget class="QLabel" name="label_protocol">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Protocol</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_protocol">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>120</y>
+       <width>470</width>
+       <height>110</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_run">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>750</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Make</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_tube_type">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>260</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tube/Plate Type</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_tube_1">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>260</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Plate</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">TubeType</string>
+     </attribute>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_tube_2">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>260</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>8 - Strip Tube</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">TubeType</string>
+     </attribute>
+    </widget>
+    <widget class="QLabel" name="label_cap_type">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>300</y>
+       <width>200</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cap Type</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_cap_1">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>300</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cap</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">CapType</string>
+     </attribute>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_cap_2">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>300</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Film</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">CapType</string>
+     </attribute>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_pcr_bcd">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>406</y>
+       <width>250</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pcr_bcd">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>400</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PCR Reagent Barcode</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_testcount">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>434</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Test Count</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_testcount">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>440</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_smp_info_2">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>60</y>
+       <width>325</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+background-color: rgb(225, 225, 225);
+border-width: 0px;
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Sample Information</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_protocol_info_2">
+     <property name="geometry">
+      <rect>
+       <x>324</x>
+       <y>60</y>
+       <width>360</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+background-color: rgb(225, 225, 225);
+border-width: 0px;
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Protocol Information</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_prev_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>750</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prev</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_extraction_bcd">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>500</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Extraction Reagent Barcode</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Extraction_bcd">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>506</y>
+       <width>250</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_extractioncount">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>540</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_extractioncount">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>534</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Test Count</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_PCR_plate">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>600</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PCR Plate Barcode</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_PCR_plate">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>606</y>
+       <width>250</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DWP">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>634</y>
+       <width>200</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>DWP Barcode</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_DWP">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>640</y>
+       <width>250</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_hidden">
+     <property name="geometry">
+      <rect>
+       <x>77</x>
+       <y>408</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 0 px;
+border-color: black;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Tab_3</string>
+    </attribute>
+    <widget class="QLabel" name="label_ctrl_seq">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>180</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PCR Control sequence</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_ncpc">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>110</y>
+       <width>108</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NC, PC</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_pcnc">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>110</y>
+       <width>108</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PC, NC</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_plrn_path">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>185</y>
+       <width>320</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_plrn_path">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>185</y>
+       <width>180</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>plrn File path</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_add_path_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>270</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>add path</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_add_path_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>340</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>add path</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="add_path_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>265</y>
+       <width>20</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="add_path_3">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>335</y>
+       <width>20</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_plrn_path_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>255</y>
+       <width>320</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_plrn_path_3">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>325</y>
+       <width>320</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_worklist_path">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>435</y>
+       <width>320</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_worklist_path">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>435</y>
+       <width>180</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>WorkList File path</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_inst_path">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>505</y>
+       <width>180</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Instrument Barcode path</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_inst_path">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>505</y>
+       <width>320</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gulim'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_use_barcode">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>635</y>
+       <width>200</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PCR Plate / DWP Barcode</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_use_bcd_1">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>635</y>
+       <width>140</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Not Used</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_use_bcd_2">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>635</y>
+       <width>140</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PCR Plate</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_use_bcd_3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>675</y>
+       <width>140</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DWP</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_use_bcd_4">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>675</y>
+       <width>140</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PCR Plate and DWP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="toolButton_plrn_path">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>185</y>
+       <width>30</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="toolButton_plrn_path_2">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>255</y>
+       <width>30</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="toolButton_plrn_path_3">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>325</y>
+       <width>30</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="toolButton_worklist_path">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>435</y>
+       <width>31</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="toolButton_inst_path">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>505</y>
+       <width>31</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_topbar">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>670</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(225, 225, 225);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_bar" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>820</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(3, 56, 125);</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_Home">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 40, 93);
+color: rgb(255, 255, 255);
+border-width: 0px;
+border-color: rgb(15, 123, 255);</string>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Option">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>141</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 40, 93);
+color: rgb(255, 255, 255);
+border-width: 0px;
+border-color: rgb(15, 123, 255);</string>
+    </property>
+    <property name="text">
+     <string>Option</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="center_line">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>64</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>685</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <zorder>tabWidget</zorder>
+  <zorder>widget_bar</zorder>
+  <zorder>label_worklist</zorder>
+  <zorder>line_1</zorder>
+  <zorder>center_line</zorder>
+  <zorder>line_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="TubeType"/>
+  <buttongroup name="CapType"/>
+ </buttongroups>
+</ui>

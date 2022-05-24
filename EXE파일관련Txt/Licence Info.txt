@@ -1,0 +1,12 @@
+WatchDog - Apache Software License (Apache License 2.0)
+Pandas1.1.5- Apache License, Version 2.0
+pshutil - BSD License (BSD)
+pycryptodome 3.9.9 - Apache Software License, BSD License, Public Domain (BSD, Public Domain, Apache)
+Qt - GNU Lesser General Public License (LGPL)
+Pyqt6 - Commercial Version
+Python 3.7.3 - Commercial Version
+sqlite 3.33.0 - Sources are uncopyrighted. Use for any purpose(zlib/libpng License)
+
+
+sqlite - public domain
+qt - LGPL 3.0 dll(파일로 분리)
